@@ -16,7 +16,7 @@ module "hub" {
   name      = "hub"
   namespace = kubernetes_namespace.this.metadata[0].name
   image     = var.hub_image
-  replicas  = var.hub_replicas
+  replicas  = 1
   port      = 4444
   config    = merge(local.hub, var.hub_config)
   host      = var.host
