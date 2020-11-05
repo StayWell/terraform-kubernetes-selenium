@@ -40,7 +40,8 @@ module "chrome" {
 
 locals {
   chrome = {
-    HUB_HOST = "hub:4444"
-    SE_OPTS  = "-timeout 100 -maxSession 1"
+    HUB_PORT_4444_TCP_ADDR = "hub"
+    HUB_PORT_4444_TCP_PORT = "4444"
+    SE_OPTS                = "-timeout 100 -maxSession 1"
   }
 }
