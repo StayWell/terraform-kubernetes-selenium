@@ -41,6 +41,6 @@ module "chrome" {
 locals {
   chrome = {
     HUB_HOST = "hub"
-    SE_OPTS = "-timeout 100 -maxSession 1"
+    SE_OPTS  = "-timeout 100 -maxSession 1"
   }
 }
