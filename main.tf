@@ -19,6 +19,7 @@ module "hub" {
   replicas  = var.hub_replicas
   port      = 4444
   config    = merge(local.hub, var.hub_config)
+  host      = var.host
 }
 
 locals {
